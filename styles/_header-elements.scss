@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    background: linear-gradient(#35ddff,#84eaff,#c1fffd,#9cf8ff);
+    width: 100%;
+    min-height: 4vw;
+
+    img{
+        max-width: 5rem;
+        min-width: 5rem;
+        min-height: 5vw;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+}

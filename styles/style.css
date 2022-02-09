@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#35ddff), color-stop(#84eaff), color-stop(#c1fffd), to(#9cf8ff));
+  background: linear-gradient(#35ddff, #84eaff, #c1fffd, #9cf8ff);
+  width: 100%;
+  min-height: 4vw;
+}
+
+header img {
+  max-width: 5rem;
+  min-width: 5rem;
+  min-height: 5vw;
+}
+
+header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
