@@ -24,10 +24,9 @@
             </a>
             <div class="nav-links">
                 <ul>
-                    <li class="nav-link"><a href="#">Overview</a></li>
-                    <li class="nav-link"><a href="#">Specifications</a></li>
-                    <li class="nav-link"><a href="#">Gallery</a></li>
-                    <li class="nav-link"><a href="#">Contact Us</a></li>
+                    <li class="nav-link"><a href="#overview">Overview</a></li>
+                    <li class="nav-link"><a href="#features">Features</a></li>
+                    <li class="nav-link"><a href="#gallery">Gallery</a></li>
                 </ul>
             </div>
         </nav>
@@ -40,7 +39,7 @@
             <div class="banner">
                 <img src="images/recliner-banner.jpg">
             </div>
-            <video poster="images/recliner1.jpg" controls>
+            <video poster="images/recliner1.jpg" id="overview" controls>
                 <source src="images/recliner-video.mp4" type="video/mp4">
             </video>
             <div class="colors-available">
@@ -53,7 +52,7 @@
                         <h2>Available colors</h2>
                     </div>
                     <div class="main-colors">
-                        <div class="colors">
+                        <!-- <div class="colors">
                             <img src="images/beige.png" alt="Beige">
                             Beige
                         </div>
@@ -64,10 +63,27 @@
                         <div class="colors">
                             <img src="images/pink.jpg" alt="Pink">
                             Pink
-                        </div>
+                        </div> -->
+                        <span class="colors" id="gray"><p>Gray</p></span>
+                        <span class="colors" id="leather"><p>Leather</p></span>
+                        <span class="colors" id="beige"><p>Beige</p></span>
                     </div>
 
                 </div>
+            </div>
+            <div class="features" id="features">
+                <div class="feature-header">
+                    <h2> Features</h2>
+                </div>
+                <div class="features-description">
+                    <p>✔️<em>Rocker or Glider Base</em> A motion feature allowing you to rock. Great for those who have trouble sleeping or nursing mothers. </p>
+                    <p>✔️<em>Swivel Base</em> A motion feature allowing you to pivot and face any direction you desire. </p>
+                    <p>✔️<em>Lay Flat</em> Exactly how it sounds, this feature allows you to recline all the way to a flat position. Great for those who love to sleep in their chair. </p>
+
+                </div>
+            </div>
+            <div id="gallery">
+                <h2>Gallery</h2>
             </div>
             <div class="carousel" data-carousel>
                 <button class="carousel-button prev" data-carousel-button>&larrtl;</button>
@@ -86,6 +102,9 @@
             </div>
         </section>
     </main>
+    <footer>
+        
+    </footer>
     
 </body>
 </html>

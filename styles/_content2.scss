@@ -2,6 +2,7 @@
 
 main{
     margin: 0 auto;
+    min-width: 50%;
     width: 50%;
     margin-top: 50px;
     display: flex;
@@ -32,6 +33,28 @@ video{
         display: inline-flex;
         align-items: baseline;
         gap: 10px;
+        #gray{
+            width: 4rem;
+            background-color: gray;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px #333;
+        }
+        #leather{
+            width: 4rem;
+            background-color: #DF9D6C;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px #333;
+        }
+        #beige{
+            width: 4rem;
+            background-color: #f5f5dc;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px #333;
+            
+        }
         .colors img{
             width: 30px;
             height: 30px;
@@ -100,4 +123,21 @@ video{
 
 .carousel-button.next {
     right: 1rem;
+}
+
+#gallery{
+    text-align: center;
+    font-family: $nav-font;
+}
+
+article{
+    margin: 10px;
+}
+
+.features{
+    margin: 10px;
+    font-family: $nav-font;
+    .feature-header{
+        text-align: center;
+    }
 }
