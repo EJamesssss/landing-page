@@ -4,32 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abenson Home</title>
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="images/abenhome.png">
-        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        
         <nav id="navbar">
-            <ul>
-                <li class="nav-link"><a href="#">Overview</a></li>
-                <li class="nav-link"><a href="#">Specifications</a></li>
-                <li class="nav-link"><a href="#">Gallery</a></li>
-                <li class="nav-link"><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="logo">
+                <img id="header-img" src="images/abensonHome-white.png">
+            </div>
+            <a href="" class="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link"><a href="#">Overview</a></li>
+                    <li class="nav-link"><a href="#">Specifications</a></li>
+                    <li class="nav-link"><a href="#">Gallery</a></li>
+                    <li class="nav-link"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
     </header>
-    <div>
-        <img src="#" id="video">
-    </div>
-    <div id="content-forms">
-        <form>
-            <input type="text">
-        </form>
-    </div>
+    <main>
+        <section class="banner">
+            <div class="banner">
+                <img src="images/recliner-banner.jpg">
+            </div>
+            <video poster="images/recliner1.jpg" controls>
+                <source src="images/recliner-video.mp4" type="video/mp4">
+            </video>
+            <div class="colors-available">
+                <h2 class="product-name">Home Center Recliner</h2>
+                <article>
+                    Reclining furniture not only feels good, but it’s also good for you! Whether you’re enjoying the big game or delving into a novel, a comfy reclining seat is beneficial for both your mental and physical health. Plus, today’s recliners are slimmer and more stylish than ever so you never have to sacrifice style over comfort!
+                </article>
+                <div class="color-options">
+                    <div>
+                        <h2>Available colors</h2>
+                    </div>
+                    <div class="main-colors">
+                        <div class="colors">
+                            <img src="images/beige.png" alt="Beige">
+                            Beige
+                        </div>
+                        <div class="colors">
+                            <img src="images/maroon.png" alt="Maroon">
+                            Maroon
+                        </div>
+                        <div class="colors">
+                            <img src="images/pink.jpg" alt="Pink">
+                            Pink
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button>&larrtl;</button>
+                <button class="carousel-button next"data-carousel-button>&rarrtl;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/recliner2.jpg" alt="recliner2">
+                    </li>
+                    <li class="slide">
+                        <img src="images/recliner3.jpg" alt="recliner3">
+                    </li>
+                    <li class="slide">
+                        <img src="images/recliner4.jpg" alt="recliner4">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
