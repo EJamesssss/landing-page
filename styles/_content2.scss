@@ -4,11 +4,11 @@ main{
     margin: 0 auto;
     min-width: 50%;
     width: 50%;
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     box-shadow: 1px 1px 5px #333;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .banner img{
@@ -125,7 +125,7 @@ video{
     right: 1rem;
 }
 
-#gallery{
+.gallery{
     text-align: center;
     font-family: $nav-font;
 }
@@ -139,5 +139,25 @@ article{
     font-family: $nav-font;
     .feature-header{
         text-align: center;
+    }
+}
+
+.section-divider{
+    height: 30px;
+}
+
+@media (min-width: 1200px){
+    .colors-available{
+        float: right;
+        width: 450px;
+        justify-items: center;
+    }
+    video{
+        width: 450px;
+    }
+    .carousel{
+        margin: 0 auto;
+        width: 30vw;
+        height: 30vw;
     }
 }

@@ -11,6 +11,16 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +31,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #31acce;
+  background-color: #0047ab;
   color: white;
 }
 
@@ -116,6 +126,16 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +146,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #31acce;
+  background-color: #0047ab;
   color: white;
 }
 
@@ -225,7 +245,7 @@ main {
   margin: 0 auto;
   min-width: 50%;
   width: 50%;
-  margin-top: 50px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +253,7 @@ main {
           box-shadow: 1px 1px 5px #333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .banner img {
@@ -375,7 +395,7 @@ video {
   right: 1rem;
 }
 
-#gallery {
+.gallery {
   text-align: center;
   font-family: "Epilogue", sans-serif;
 }
@@ -393,6 +413,36 @@ article {
   text-align: center;
 }
 
+.section-divider {
+  height: 30px;
+}
+
+@media (min-width: 1200px) {
+  .colors-available {
+    float: right;
+    width: 450px;
+    justify-items: center;
+  }
+  video {
+    width: 450px;
+  }
+  .carousel {
+    margin: 0 auto;
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,7 +453,7 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #31acce;
+  background-color: #0047ab;
   color: white;
 }
 
@@ -502,7 +552,7 @@ main {
   margin: 0 auto;
   min-width: 50%;
   width: 50%;
-  margin-top: 50px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,7 +560,7 @@ main {
           box-shadow: 1px 1px 5px #333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .banner img {
@@ -652,7 +702,7 @@ video {
   right: 1rem;
 }
 
-#gallery {
+.gallery {
   text-align: center;
   font-family: "Epilogue", sans-serif;
 }
@@ -668,11 +718,134 @@ article {
 
 .features .feature-header {
   text-align: center;
+}
+
+.section-divider {
+  height: 30px;
+}
+
+@media (min-width: 1200px) {
+  .colors-available {
+    float: right;
+    width: 450px;
+    justify-items: center;
+  }
+  video {
+    width: 450px;
+  }
+  .carousel {
+    margin: 0 auto;
+    width: 30vw;
+    height: 30vw;
+  }
 }
 
 footer {
   width: 100%;
   height: 80px;
-  background-color: #31acce;
+  background-color: #0047ab;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: ". . text email-area . .";
+  grid-auto-flow: column;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.signup-text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: text;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-family: "Epilogue", sans-serif;
+  color: white;
+  justify-items: flex-end;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  height: auto;
+}
+
+.signup-text h4 {
+  margin-bottom: 7px;
+}
+
+.signup-text p {
+  font-size: .8rem;
+  margin: 0;
+}
+
+.input-email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: email-area;
+}
+
+.email-form {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.email-form input {
+  background-color: white;
+  color: #0047ab;
+  border: 2px solid black;
+  max-width: 300px;
+  font-size: 1.1rem;
+  border-radius: .5em;
+  margin-right: 1em;
+  outline: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.email-form button {
+  color: white;
+  background-color: #38d0ff;
+  border: 2px solid black;
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+.email-form input:focus {
+  background-color: #DCF3FF;
+}
+
+.email-form button:focus, .email-form button:hover {
+  background-color: #0047ab;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: " . text email-area .";
+  }
+  .signup-text {
+    font-size: .9rem;
+    margin-top: 20px;
+  }
+  .signup-text p {
+    font-size: .7rem;
+    margin: 0;
+  }
+  .signup-text h4 {
+    margin-top: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

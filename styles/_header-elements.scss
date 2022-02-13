@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,600;1,800&family=Josefin+Sans:wght@400;600&display=swap');
 
-$color-theme: rgba(49, 172, 206, 1);
+$color-theme: rgba(0, 71, 171, 1);
 $nav-font: 'Epilogue', sans-serif;
-
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 #navbar{
     display: flex;

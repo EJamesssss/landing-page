@@ -24,6 +24,7 @@
             </a>
             <div class="nav-links">
                 <ul>
+                    <li class="nav-link"><a href="#home">Home</a></li>
                     <li class="nav-link"><a href="#overview">Overview</a></li>
                     <li class="nav-link"><a href="#features">Features</a></li>
                     <li class="nav-link"><a href="#gallery">Gallery</a></li>
@@ -34,12 +35,14 @@
             <span></span>
         </label>
     </header>
+    <div class="section-divider" id="home"></div>
     <main>
-        <section class="banner">
+        <section class="banner" id="banner">
             <div class="banner">
                 <img src="images/recliner-banner.jpg">
             </div>
-            <video poster="images/recliner1.jpg" id="overview" controls>
+            <div class="section-divider" id="overview"></div>
+            <video poster="images/recliner1.jpg" controls>
                 <source src="images/recliner-video.mp4" type="video/mp4">
             </video>
             <div class="colors-available">
@@ -71,7 +74,8 @@
 
                 </div>
             </div>
-            <div class="features" id="features">
+            <div class="section-divider" id="features"></div>
+            <div class="features">
                 <div class="feature-header">
                     <h2> Features</h2>
                 </div>
@@ -82,7 +86,8 @@
 
                 </div>
             </div>
-            <div id="gallery">
+            <div class="section-divider" id="gallery"></div>
+            <div class="gallery">
                 <h2>Gallery</h2>
             </div>
             <div class="carousel" data-carousel>
@@ -103,7 +108,16 @@
         </section>
     </main>
     <footer>
-        
+        <div class="signup-text">
+            <h4>Sign up to our Newsletter</h4>
+            <p>Get limited offers by joining our subscription!</p>
+        </div>
+        <div class="input-email">
+            <form class="email-form" action="/email" method="post">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe now!</button>
+            </form>
+        </div>
     </footer>
     
 </body>
