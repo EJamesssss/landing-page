@@ -1,0 +1,25 @@
+@import "_header-elements.scss";
+
+.success-message{
+    text-align: center;
+    font-family: $nav_font;
+    img{
+        width: 20vw;
+        height: 20vw;
+    }
+    span{
+        font-weight: bold;
+        color: $color-theme;
+    }
+}
+
+
+#return-home{
+    width: 15rem;
+    height: 3rem;
+    background-color: $color-theme;
+    color: white;
+    font-weight: bold;
+    font-family: $nav-font;
+    cursor: pointer;
+}
